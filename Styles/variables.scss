@@ -149,17 +149,12 @@ $bold: 700;
     .symbol-image {
         position: absolute;
         z-index: -1;
-        height: 100%;
-        // opacity: 0;
-        // animation: show 2s ease-in infinite;
+        height: 799px;
+        top: 0;
     }
 }
 
-@keyframes show {
-    0% {opacity: 0;}
-    50% {opacity: 0.5;}
-    100% {opacity: 1.0;}
-}
+
 
 .main-title {
     padding-top: 267px;

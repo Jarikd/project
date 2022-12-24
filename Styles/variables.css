@@ -105,7 +105,7 @@
   position: absolute;
   z-index: -1;
   height: 799px;
-  top: 0px;
+  top: 0;
 }
 
 .main-title {

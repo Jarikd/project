@@ -151,7 +151,14 @@ $bold: 700;
         z-index: -1;
         height: 799px;
         top: 0;
+        animation: show-symbol 2s ease-in normal;
     }
+}
+
+@keyframes show-symbol {
+    0% {opacity: 0;};
+    50% {opacity: 0.5;};
+    100% {opacity: 1.0;}
 }
 
 

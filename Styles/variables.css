@@ -106,8 +106,8 @@
   z-index: -1;
   height: 799px;
   top: 0;
-  -webkit-animation: show-symbol 2s ease-in normal;
-          animation: show-symbol 2s ease-in normal;
+  -webkit-animation: show-symbol 2s ease-in;
+          animation: show-symbol 2s ease-in;
 }
 
 @-webkit-keyframes show-symbol {

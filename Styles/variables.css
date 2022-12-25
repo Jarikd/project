@@ -35,6 +35,16 @@
   color: #323264;
 }
 
+.h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -203,4 +213,40 @@
   font-size: 19px;
   line-height: 30px;
   color: #ffffff;
+}
+
+.what-can-we-do-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.what-can-we-do-section .services {
+  color: #24a3ff;
+}
+.what-can-we-do-section .what-can-we-do-title {
+  padding-top: 10px;
+}
+.what-can-we-do-section .what-can-we-do-boxes {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.what-can-we-do-section .what-can-we-do-boxes .what-can-we-do-box {
+  max-width: 400px;
+}
+.what-can-we-do-section .what-can-we-do-boxes .what-can-we-do-box .what-can-we-do-sub-title {
+  color: #24a3ff;
+  padding-top: 30px;
+  line-height: 27px;
+}
+.what-can-we-do-section .what-can-we-do-boxes .what-can-we-do-box .what-can-we-do-description {
+  padding-top: 15px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }/*# sourceMappingURL=variables.css.map */

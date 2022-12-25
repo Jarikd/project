@@ -77,6 +77,16 @@ $bold: 700;
     color: #323264;
 }
 
+.h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -151,17 +161,21 @@ $bold: 700;
         z-index: -1;
         height: 799px;
         top: 0;
-        animation: show-symbol 2s ease-in ;
+        animation: show-symbol 2s ease-in;
     }
 }
 
 @keyframes show-symbol {
-    0% {opacity: 0;};
-    50% {opacity: 0.5;};
-    100% {opacity: 1.0;}
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-
-
 
 .main-title {
     padding-top: 267px;
@@ -230,3 +244,47 @@ $bold: 700;
         }
     }
 }
+
+
+.what-can-we-do-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+
+
+    .services {
+        color: $active-regular;
+    }
+
+    .what-can-we-do-title {
+        padding-top: 10px;
+    }
+
+    .what-can-we-do-boxes{
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+
+        .what-can-we-do-box {
+            max-width: 400px;
+            .what-can-we-do-sub-title {
+                color: $active-regular;
+                padding-top: 30px;
+                line-height: 27px;
+            }
+            .what-can-we-do-description {
+                padding-top: 15px;
+                color: $basic-white;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+
+            }
+        }
+    }
+}
+

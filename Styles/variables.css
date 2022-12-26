@@ -35,6 +35,16 @@
   color: #323264;
 }
 
+.h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -94,88 +104,4 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-}
-
-.symbol-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.symbol-container .symbol-image {
-  position: absolute;
-  z-index: -1;
-  height: 799px;
-  top: 0px;
-}
-
-.main-title {
-  padding-top: 267px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main-title .main-title-text {
-  color: #ffffff;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
-  text-align: center;
-}
-
-.main-go-to-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 305px;
-}
-
-.main-info {
-  padding-top: 90px;
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-}
-.main-info .main-info-vl {
-  width: 4px;
-  height: 303px;
-  background: rgba(255, 255, 255, 0.3);
-}
-.main-info .main-info-left-side {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.main-info .main-info-left-side .main-info-title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
-  text-align: right;
-  color: #b3b3ba;
-}
-.main-info .main-info-right-side {
-  max-width: 581px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 30px;
-}
-.main-info .main-info-right-side .main-info-subtitle {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
-  color: #ffffff;
-}
-.main-info .main-info-right-side .main-info-description {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 30px;
-  color: #ffffff;
 }/*# sourceMappingURL=variables.css.map */

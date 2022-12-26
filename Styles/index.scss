@@ -1,0 +1,133 @@
+@import "./variables.scss";
+
+.symbol-container {
+    @include center;
+
+    .symbol-image {
+        position: absolute;
+        z-index: -1;
+        height: 799px;
+        top: 0;
+        animation: show-symbol 2s ease-in;
+    }
+}
+
+@keyframes show-symbol {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-title {
+    padding-top: 267px;
+    @include center;
+    .main-title-text {
+        color: $basic-white;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+    }
+}
+.main-go-to-bottom {
+    @include center;
+    padding-top: 305px;
+}
+
+.main-info {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    .main-info-vl {
+        width: 4px;
+        height: 303px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    .main-info-left-side {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .main-info-title {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            text-align: right;
+            color: $grey-text;
+        }
+    }
+    .main-info-right-side {
+        max-width: 581px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        .main-info-subtitle {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            color: $basic-white;
+        }
+        .main-info-description {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 30px;
+            color: $basic-white;
+        }
+    }
+}
+
+.what-can-we-do-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+
+    .services {
+        color: $active-regular;
+    }
+
+    .what-can-we-do-title {
+        padding-top: 10px;
+    }
+
+    .what-can-we-do-boxes {
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+
+        .what-can-we-do-box {
+            max-width: 400px;
+            .what-can-we-do-sub-title {
+                color: $active-regular;
+                padding-top: 30px;
+                line-height: 27px;
+            }
+            .what-can-we-do-description {
+                padding-top: 15px;
+                color: $basic-white;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}

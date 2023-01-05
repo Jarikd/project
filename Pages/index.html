@@ -7,10 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Project</title>
 	<link rel="stylesheet" href="../Styles/reset.css">
-	<link rel="stylesheet" href="../Styles/index.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../Styles/index.css">
+
 </head>
 
 <body>
@@ -23,11 +27,18 @@
 			</div>
 			<div class="right-side">
 				<ul class="top-box">
-					<li class="languages">
-						<div class="language">УК</div>
-						<div class="language">РУ</div>
-						<div class="language active">EN</div>
-					</li>
+
+					<div id="dropdown-menu-lang" class="dropdown-menu-lang">
+
+						<ul>
+							<li><a data-language="en" href="#">EN</a></li>
+							<li><a data-language="ru" href="#">RU</a></li>
+							<li><a data-language="ua" href="#">UA</a></li>
+						</ul>
+
+						<a href="#" class="title-lang">EN</a>
+					</div>
+
 					<li class="dot"></li>
 					<li class="address">Kyiv, Mechnikova str, 14/1</li>
 					<li class="dot"></li>
@@ -52,38 +63,80 @@
 				</div>
 			</div>
 		</header>
-		
+
 		<div class="symbol-container"><img src="../Assets/Images/Symbol.png" alt="symbol" class="symbol-image"> </div>
-		
+
 		<main class="main-section">
 			<div class="main-title">
 				<h1 class="main-title-text">
 					you legal solutions provider</h1>
 			</div>
-			<div class="main-go-to-bottom"><a href="#"><img src="../Assets/Icons/Scroll.svg" alt="scroll-button"></a>
+			<div class="main-go-to-bottom">
+				<a href="#" class="icon-go-to-bottom">
+					<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_22728_11339)">
+							<circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+							<path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+						</g>
+						<defs>
+							<clipPath id="clip0_22728_11339">
+								<rect width="42" height="42" fill="none" />
+							</clipPath>
+						</defs>
+					</svg>
+
+				</a>
 			</div>
 			<div class="main-info">
 				<div class="main-info-left-side">
-					<h1 class="main-info-title hero">Consistent</h1>
-					<h1 class="main-info-title">Customer oriented</h1>
-					<h1 class="main-info-title">Innovative</h1>
-					<h1 class="main-info-title">Business oriented</h1>
+					<p class="main-info-title hero" data-type="Consistent">Consistent</p>
+					<p class="main-info-title" data-type="Customer">Customer oriented</p>
+					<p class="main-info-title" data-type="Innovative">Innovative</p>
+					<p class="main-info-title" data-type="Business">Business oriented</p>
 				</div>
+
 				<div class="main-info-vl"></div>
-				<div class="main-info-right-side">
-					<h2 class="main-info-subtitle">We turn the idea of legal services</h2>
+
+				<div class="main-info-right-side hide active" id="Consistent">
+					<h2 class="main-info-subtitle">We turn the idea of Consistent</h2>
 					<p class="main-info-description">Consolidating many years of experience and practice, the company's
 						lawyers accompany complex projects and achieve a number of important decisions for the industry.
 						Many of them form the practice of applying the law of the sea in Ukraine.</p>
 				</div>
+
+				<div class="main-info-right-side hide " id="Customer">
+					<h2 class="main-info-subtitle">We turn the idea of Customer</h2>
+					<p class="main-info-description">Consolidating many years of experience and practice, the company's
+						lawyers accompany complex projects and achieve a number of important decisions for the industry.
+						Many of them form the practice of applying the law of the sea in Ukraine.</p>
+				</div>
+
+				<div class="main-info-right-side hide " id="Innovative">
+					<h2 class="main-info-subtitle">We turn the idea of Innovative</h2>
+					<p class="main-info-description">Consolidating many years of experience and practice, the company's
+						lawyers accompany complex projects and achieve a number of important decisions for the industry.
+						Many of them form the practice of applying the law of the sea in Ukraine.</p>
+				</div>
+
+				<div class="main-info-right-side hide" id="Business">
+					<h2 class="main-info-subtitle">We turn the idea of Business</h2>
+					<p class="main-info-description">Consolidating many years of experience and practice, the company's
+						lawyers accompany complex projects and achieve a number of important decisions for the industry.
+						Many of them form the practice of applying the law of the sea in Ukraine.</p>
+				</div>
+
+
+
 			</div>
 
 			<div class="what-can-we-do-section">
 				<div class="what-can-we-do-link">
-					<a href="#"><h3 class="services h3">Services ></h3></a>
+					<a href="#">
+						<h3 class="services-title h3">Services ></h3>
+					</a>
 				</div>
 				<div class="what-can-we-do-title">
-					<h1 class="hero">What can we do better than others?</h1>
+					<p class="hero">What can we do better than others?</p>
 				</div>
 				<div class="what-can-we-do-boxes">
 					<div class="what-can-we-do-box">
@@ -136,8 +189,83 @@
 
 				</div>
 			</div>
+
+
 		</main>
 	</div>
+	<div class="border-1"></div>
+	<div class="border-2"></div>
+
+	<div class="team-container wrapper">
+		<div class="slider-container">
+			<div class="slick-item">
+				<div class="photo-box">
+					<img src="../Assets/Images/photo.png" alt="photo">
+				</div>
+				<div class="team-info-box">
+					<a href="#" class="team-title-box">
+						<h3 class="team-title h3">team ></h3>
+					</a>
+
+					<p class="team-description hero">We are used to taking responsibility and always guarantee honest,
+						timely
+						assistance, even in situations where most are powerless.</p>
+
+					<p class="team-name h4">Oleksandr Oleksandrovskyi</p>
+					<p class="team-name-ceo">CEO</p>
+				</div>
+			</div>
+
+			<div class="slick-item">
+				<div class="photo-box">
+					<img src="../Assets/Images/photo.png" alt="photo">
+				</div>
+				<div class="team-info-box">
+					<a href="#" class="team-title-box">
+						<h3 class="team-title h3">team ></h3>
+					</a>
+
+					<p class="team-description hero">We are used to taking responsibility and always guarantee honest,
+						timely
+						assistance, even in situations where most are powerless.</p>
+
+					<p class="team-name h4">Oleksandr Oleksandrovskyi</p>
+					<p class="team-name-ceo">CEO</p>
+				</div>
+			</div>
+
+			<div class="slick-item">
+				<div class="photo-box">
+					<img src="../Assets/Images/photo.png" alt="photo">
+				</div>
+				<div class="team-info-box">
+					<a href="#" class="team-title-box">
+						<h3 class="team-title h3">team ></h3>
+					</a>
+
+					<p class="team-description hero">We are used to taking responsibility and always guarantee honest,
+						timely
+						assistance, even in situations where most are powerless.</p>
+
+					<p class="team-name h4">Oleksandr Oleksandrovskyi</p>
+					<p class="team-name-ceo">CEO</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script src="../Script/index.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,11 @@
 .symbol-container {
     @include center;
 
+    // position: absolute;
+    // top: 0;
+    // left: 50%;
+    // transform: translate(-50%, 0);
+    // z-index: -1;
     .symbol-image {
         position: absolute;
         z-index: -1;
@@ -42,6 +47,11 @@
     padding-top: 305px;
 }
 
+.icon-go-to-bottom:hover svg circle,
+.icon-go-to-bottom:hover svg path {
+    stroke: $accent;
+}
+
 .main-info {
     padding-top: 90px;
     display: flex;
@@ -54,25 +64,26 @@
         background: rgba(255, 255, 255, 0.3);
     }
     .main-info-left-side {
+        width: fit-content;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
         gap: 30px;
         .main-info-title {
+            width: fit-content;
+            cursor: pointer;
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
             font-size: 38px;
             line-height: 46px;
-            text-align: right;
             color: $grey-text;
         }
     }
     .main-info-right-side {
         max-width: 581px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 30px;
+        padding-top: 43px;
         .main-info-subtitle {
             font-family: "Montserrat";
             font-style: normal;
@@ -88,6 +99,13 @@
             font-size: 19px;
             line-height: 30px;
             color: $basic-white;
+            padding-top: 30px;
+        }
+        &.hide {
+            display: none;
+        }
+        &.active {
+            display: block;
         }
     }
 }
@@ -98,8 +116,18 @@
     display: flex;
     flex-direction: column;
 
-    .services {
-        color: $active-regular;
+    .what-can-we-do-link {
+        width: fit-content;
+
+        & a {
+            text-decoration: none;
+        }
+        .services-title {
+            color: $active-regular;
+            &:hover {
+                color: $accent;
+            }
+        }
     }
 
     .what-can-we-do-title {
@@ -110,6 +138,7 @@
         padding-top: 60px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         gap: 60px;
 
         .what-can-we-do-box {
@@ -127,6 +156,86 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 26px;
+            }
+        }
+    }
+}
+
+.border-1 {
+    background: #cacadb;
+    border-radius: 0px 0px 12px 12px;
+    height: 10px;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.border-2 {
+    background: #e7e7f2;
+    border-radius: 0px 0px 12px 12px;
+    height: 10px;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.team-container {
+    padding-top: 60px;
+    padding-bottom: 106px;
+
+    .slick-dots {
+        bottom: -60px;
+    }
+    .slick-dots li button:before {
+        font-size: 16px;
+        color: $active-regular;
+    }
+
+    .slick-arrow {
+        display: none;
+    }
+    .slick-item {
+        display: flex;
+
+        .photo-box {
+            max-width: 400px;
+            & img {
+                min-width: 400px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .team-info-box {
+            border-radius: 0px 12px 12px 0px;
+            padding: 30px;
+            background: #f5f5fa;
+
+            .team-title-box {
+                display: block;
+                width: fit-content;
+                text-decoration: none;
+
+                .team-title {
+                    color: $active-regular;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+
+            .team-description {
+                padding-top: 5px;
+            }
+            .team-name {
+                padding-top: 30px;
+                color: #b3b3ba;
+            }
+            .team-name-ceo {
+                padding-top: 6px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #b3b3ba;
             }
         }
     }

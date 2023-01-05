@@ -23,7 +23,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .h2 {
@@ -45,6 +44,14 @@
   text-transform: uppercase;
 }
 
+.h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -61,21 +68,80 @@
   line-height: 20px;
   color: #ffffff;
 }
-.header .right-side .top-box .languages {
+.header .right-side .top-box .dropdown-menu-lang {
   display: flex;
+  justify-content: flex-end;
+  width: 150px;
 }
-.header .right-side .top-box .languages .language {
-  width: 32px;
-  height: 25px;
-  border-radius: 8px;
+.header .right-side .top-box .dropdown-menu-lang ul {
+  list-style: none;
+  display: none;
+}
+.header .right-side .top-box .dropdown-menu-lang ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  font-weight: 700;
+  width: 33px;
+  height: 25px;
 }
-.header .right-side .top-box .languages .language.active, .header .right-side .top-box .languages .language:hover {
-  background-color: #f0145a;
+.header .right-side .top-box .dropdown-menu-lang ul li:hover {
+  background: #f0145a;
+  border-radius: 8px;
+}
+.header .right-side .top-box .dropdown-menu-lang ul li a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.header .right-side .top-box .dropdown-menu-lang .title-lang {
+  width: 33px;
+  height: 25px;
+  background: #f0145a;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.header .right-side .top-box .dropdown-menu-lang.open {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 6px;
+}
+.header .right-side .top-box .dropdown-menu-lang.open .title-lang {
+  width: 33px;
+  height: 25px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .right-side .top-box .dropdown-menu-lang.open ul {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
 }
 .header .right-side .top-box .number-link a {
   font-weight: 700;
@@ -104,4 +170,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+.header .right-side .bottom-box ul a:hover {
+  color: #f0145a;
+  border-bottom: 2px solid #f0145a;
 }/*# sourceMappingURL=variables.css.map */

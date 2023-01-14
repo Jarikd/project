@@ -45,8 +45,10 @@ optionsHolter.onclick = function (event) {
   }
 };
 
-$(".burger-menu ").on("click", ".bar", function () {
-  $(".menu").slideToggle();
-  $(".bar").toggleClass("change");
-  $(".menu li").slideRight();
+let burgerMenu = document.getElementById("burger-menu");
+let menu = document.getElementById("menu");
+
+burgerMenu.addEventListener("click", function () {
+  burgerMenu.classList.toggle("close");
+  menu.classList.toggle("block");
 });

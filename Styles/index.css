@@ -824,6 +824,7 @@ body {
     justify-content: flex-start;
   }
   .main-info .main-info-left-side::-webkit-scrollbar {
+    height: 5px;
     border-radius: 10px;
     background-color: #cacadb;
   }

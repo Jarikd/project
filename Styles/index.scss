@@ -451,7 +451,6 @@
         gap: 10px;
         flex-direction: column;
         .main-info-left-side {
-            
             width: 100%;
             padding-bottom: 10px;
             overflow-x: scroll;
@@ -462,15 +461,16 @@
             flex-direction: row;
             justify-content: flex-start;
             &::-webkit-scrollbar {
-               border-radius: 10px;
-               background-color: #cacadb;
+                height: 5px;
+                border-radius: 10px;
+                background-color: #cacadb;
             }
             &::-webkit-scrollbar-thumb {
                 box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
             }
-            
+
             & .main-info-title {
-                white-space: nowrap
+                white-space: nowrap;
             }
         }
         .main-info-vl {
@@ -490,9 +490,8 @@
         flex-direction: column;
         .team-info-box {
             border-radius: 0px 0px 12px 12px;
-           
         }
-        .photo-box img{
+        .photo-box img {
             border-radius: 12px 12px 0px 0px;
             width: 100%;
         }
@@ -547,8 +546,6 @@
 }
 
 @media (max-width: 420px) {
- 
-
     .publications-container .footer .footer-left-side .footer-left-side-bottom {
         flex-direction: column;
     }
